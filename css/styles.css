@@ -173,7 +173,8 @@ a{
     align-items: center;
 
 
-}.icon-container--accent{
+}
+.icon-container--accent{
     background-color: var(--color-accent);
 }
 .
@@ -191,6 +192,10 @@ a{
     margin: 1rem 0;
 
 
+}
+.btn--streched{
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 .btn--primary{
     color:#fff;
@@ -375,4 +380,43 @@ a{
     .testimonial .quote {
         margin-left: 6rem;
     }
+}
+/*callouts*/
+.callout{
+    padding: 4rem;
+    border-radius: 5px;
+}
+.callout--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+.callout__headings{
+    color:#fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+.callout .btn{
+    align-self: center;
+    justify-self: center;
+}
+.callout__content{
+    text-align:center ;
+}
+.callout .btn{
+    border-radius: 40px;
+    text-wrap: nowrap;
+}
+@media screen and (min-width:768px) {
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+
+    }
+    .callout__content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin: 0 2rem;
+    }
+    
 }
