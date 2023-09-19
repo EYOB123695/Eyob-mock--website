@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>      
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />   
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans&display=swap"
@@ -14,19 +14,20 @@
     />
   </head>
   <body>
-    <div class="collapsible collapsible--expanded">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading">Item 1</h2>
-
-        <svg class="icon collapsible__wordpress">
-          <use xlink:href="images/sprite.svg#wordpress"></use>
+    <nav class="nav collapsible">
+      <a href="/"><img src="images/logo.svg" alt=""> </a>   
+        <svg class="icon icon-white  nav_togler">
+          <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
-      </header>
-      <div class="collapsible__content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-        exercitationem?
-      </div>
-    </div>
+        <ul class="list collapsible__content">    
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">vps</a></li>
+          <li class="nav__item"><a href="#">Domain</a></li>  
+          <li class="nav__item"><a href="#">Pricing</a></li> 
+        </ul> 
+      
+    </nav>
     <script src="js/main.js"></script>
   </body>
 </html>
+ 
