@@ -507,6 +507,11 @@ a{
     
     
 }  
+
+.block {
+    --padding-vertical: 5rem;
+    padding: var(--padding-vertical) 2rem;
+  }
 block--dark{
     background: #000;
     color: #7b857b;
@@ -576,6 +581,7 @@ block--dark .block__heading{
 }
 .header__block{
     text-align: center;
+    margin-bottom: 4rem;
     margin-left: 4rem;
 }
 @media screen and (min-width:768px) {
@@ -700,4 +706,8 @@ block--dark .block__heading{
   }
   .feature:first-of-type{
     margin-top:6rem ;
+  }
+  /*footer*/
+  .footer{
+    background: #232323;
   }
