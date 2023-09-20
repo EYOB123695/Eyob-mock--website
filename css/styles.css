@@ -648,6 +648,9 @@ block--dark .block__heading{
   .plan .list__item {
     margin-bottom: 2rem;
   }
+  .plan--popular {
+    transform: scale(1.1); 
+  }
   
   .plan--popular .card__header {
     position: relative;
@@ -669,4 +672,11 @@ block--dark .block__heading{
   .plan--popular:hover {
     transform: scale(1.15);
   }
-  
+  /*plans block*/
+  .block-plans .grid{
+    gap:8rem 4rem;
+  }
+  .block-plans .card{
+    max-width: 500px;
+    margin: 0 auto;
+  }
