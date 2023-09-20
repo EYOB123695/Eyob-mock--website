@@ -94,11 +94,12 @@ a{
 }
 /*badges*/
 .badge{
-    border-radius: 20px;
+    border-radius: 19px;
     font-size: 2rem;
     font-weight: bold;
-    padding: 0.5rem 2rem;
+    padding: 0.3rem 0.7rem;
     white-space: nowrap;
+    margin-bottom: 0;
 }
 .badge--primary{
     background: var(--color-primary);
@@ -180,6 +181,7 @@ a{
 }
 .
 /*BUTTON*/
+
 .btn{
     border-radius: 40px;
     border:0;
@@ -191,8 +193,12 @@ a{
     cursor: pointer;
     text-align: center; 
     margin: 1rem 0;
-
-
+}
+.btn .icon{
+    width:2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 .btn--streched{
     padding-left: 6rem;
@@ -270,7 +276,7 @@ a{
 .input-group .input{
     border: 0;
     flex-grow: 1;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
 
 
 }
@@ -542,5 +548,40 @@ block--dark .block__heading{
         align-self: center;
     }
 
+    
+}
+.btn--spec{
+    border-radius: 30px;
+    text-wrap:nowrap;
+    margin-right: 5px;
+}
+/*block doman*/
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border:0;
+    margin: 4rem auto; 
+    max-width: 670px;
+}
+.block-domain__prices{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,6rem);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 700px;
+    margin: 0 auto;
+
+
+}
+.header__block{
+    text-align: center;
+    margin-left: 4rem;
+}
+@media screen and (min-width:768px) {
+    .block-domain__prices{
+        grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
+
+    }
     
 }
