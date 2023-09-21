@@ -1,3 +1,4 @@
+
 /*typography*/
 html{
     font-size:62.5%;  
@@ -179,13 +180,13 @@ a{
 .icon-container--accent{
     background-color: var(--color-accent);
 }
-.
+
 /*BUTTON*/
 
 .btn{
     border-radius: 40px;
     border:0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     font-size: 1.8rem; ;
     font-weight: 600;
     text-transform: uppercase;
@@ -277,6 +278,7 @@ a{
     border: 0;
     flex-grow: 1;
     padding: 1rem 2rem;
+    width: 0;
 
 
 }
@@ -523,7 +525,7 @@ block--dark .block__heading{
     color: #fff;
 } 
 .block--skewed-left{
-    padding-bottom: calc(var(-pading-vertical)+4rem);
+    padding-bottom: calc(var(--pading-vertical)+4rem);
     clip-path:polygon(0% 0%,100% 0%,100% 80%,0% 1000%);
 }
 .container{
@@ -569,8 +571,9 @@ block--dark .block__heading{
     max-width: 670px;
 }
 .block-domain__prices{
+    color: var(--color-headings);
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,6rem);
     justify-items: center;
     font-size: 2rem;
@@ -671,7 +674,7 @@ block--dark .block__heading{
     top: -6px;
     right: 5%;
   }
-  
+ 
   .plan:hover {
     transform: scale(1.05);
   }
